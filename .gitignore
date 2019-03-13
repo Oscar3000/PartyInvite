@@ -1,3 +1,4 @@
 .vs/
 PartyInvites/bin/*
 PartyInvites/obj/*
+PartyInvites/wwwroot/lib/*
