@@ -1,0 +1,27 @@
+﻿@model IEnumerable<PartyInviteModel>
+@{
+    ViewData["Title"] = "Lists";
+}
+
+<h2>Lists of Guests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var guest in Model)
+        {
+        <tr>
+            <td>@guest.Name</td>
+            <td>@guest.Email</td>
+            <td>@guest.PhoneNumber</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

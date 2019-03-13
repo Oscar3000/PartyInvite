@@ -1,0 +1,24 @@
+﻿@model PartyInviteModel
+@{
+    ViewData["Title"] = "Thanks for your time";
+}
+
+
+<div class="container" style="margin-top:30px">
+    <h3 class="text-center">Hey @Model.Name!</h3>
+    <div class="text-center">
+        @if(Model.willAttend == true)
+        {
+            <p>Great! See you on @DateTime.Now.AddDays(14)</p>
+
+        }
+        else { 
+            <p>it is unfortunate that you won't be there but thanks for responsing anyways!</p>
+        }
+    </div>
+</div>
+
+
+<div class="container text-center">
+    Click <a asp-action="Lists">Here</a> for the lists of guests
+</div>
